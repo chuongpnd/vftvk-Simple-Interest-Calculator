@@ -4,7 +4,7 @@ function compute() {
   const amount = document.getElementById('numberAmount').value;
   console.log(slideRate);
   if (amount === '' || amount < 0) {
-    alert('Please fill amount');
+    alert('Please fill amount, and must be positive');
     return;
   }
   if (slideRate === null || slideRate === 0) {
@@ -12,7 +12,7 @@ function compute() {
     return;
   }
   if (year === '' || amount < 0) {
-    alert('Please fill Year');
+    alert('Please fill Year , and must be positive');
     return;
   }
   const total = ((amount * slideRate) / 100) * year;
