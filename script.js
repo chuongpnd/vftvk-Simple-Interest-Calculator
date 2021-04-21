@@ -3,7 +3,7 @@ function compute() {
   const slideRate = document.getElementById('slideRate').value;
   const amount = document.getElementById('numberAmount').value;
   console.log(slideRate);
-  if (amount === '') {
+  if (amount === '' || amount < 0) {
     alert('Please fill amount');
     return;
   }
@@ -11,7 +11,7 @@ function compute() {
     alert('Please fill Rate');
     return;
   }
-  if (year === '') {
+  if (year === '' || amount < 0) {
     alert('Please fill Year');
     return;
   }
